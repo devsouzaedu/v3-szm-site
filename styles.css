@@ -1,0 +1,299 @@
+/* Definições gerais para a seção div1home */
+.div1home {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Estilo para elementos com a classe edu */
+.edu {
+  font-size: smaller;
+}
+
+/* Estilo para a imagem do designer */
+.eduimg {
+  margin: 30px 30px;
+}
+
+/* Overlay escuro sobre a imagem de fundo */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* Imagem de fundo da seção div1home */
+.bg1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  z-index: -1;
+}
+
+/* Estilo para o logotipo */
+.szmlogo1 {
+  max-width: 60px;
+}
+
+/* Estilo para o container de conteúdo centralizado */
+.content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para o título principal com animação de fade */
+.maiorconst1 {
+  color: #fff;
+  margin: 0;
+  width: 100%;
+  animation: fadeInUp 0.9s ease-out forwards;
+}
+
+/* Estilo para os botões na seção div1home */
+.buttons-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.buttons-container button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+/* Estilo para o título da seção div2text com animação de slide */
+.div2title {
+  text-align: center;
+  margin: 10% 15%;
+  opacity: 0;
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+/* Estilo para o texto na seção div2text */
+.div2text {
+  text-align: center;
+  margin: 2% 14%;
+  font-size: 18px;
+}
+
+/* Estilo para a galeria de balões */
+.Galeriabalao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5%;
+}
+
+.card {
+  width: 100%; /* Ocupa toda a largura da tela */
+  margin-bottom: 2%; /* Adiciona uma pequena margem inferior entre os cards */
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+h3, p {
+  margin: 0;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Estilo para imagens na galeria de balões */
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Estilo para a galeria de balões em dispositivos móveis */
+@media (max-width: 767px) {
+  .balloongallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Estilo para os campos de input, select e textarea no formulário */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Estilo para as labels dos campos do formulário */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Estilo para o botão de submit no formulário */
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Estilo para o container do formulário */
+.formcontainer {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 70%;
+}
+
+/* Estilo para a coluna de labels com 25% de largura */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Estilo para a coluna de inputs com 75% de largura */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Limpar floats após as colunas do formulário */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Estilo para o título da seção enc2 */
+.enc2 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+/* Estilo para o rodapé do site */
+.footer {
+  font-size: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilo para o popup de cookies */
+.cookie-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  z-index: 9999;
+}
+
+/* Estilo para o botão de aceitar cookies */
+#accept-cookies {
+  background-color: #fff;
+  color: #333;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo para a seção div2text */
+.div2text {
+  margin-bottom: 50px;
+}
+
+/* Animação de fade para elementos com a classe fadeInUp */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animação de slide para elementos com a classe slideInLeft */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Título da Página -->
+  <title>Site Szm v1</title>
+  <!-- Configuração de caracteres e escala da viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links para os estilos e bibliotecas externas -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center text-white" href="/">
+        <img class="szmlogo1" src="szmlogonobg.png">
+      </a>
+      <!-- Botão de toggler para menus responsivos -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Links do Navbar -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Topo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Faixas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Balões</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Infláveis</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção 1 (div1home) -->
+  <div class="div1home">
+    <div class="overlay"></div> 
+    <!-- Imagem de fundo -->
+    <img class="bg1" src="bgszmsite.jpg">
+    <div class="content-container text-center">
+      <!-- Título e botões -->
+      <h1 class="maiorconst1">A maior construtora de Balões especiais do Brasil</h1>
+      <div class="buttons-container">
+        <button class="btn btn-primary" data-target="formSection">Faça já um orçamento</button>
+        <button class="btn btn-secondary" data-target="Galeriabalao">Últimos projetos</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seção 2 (div2text) -->
+  <div class="div2text">
+    <!-- Título e texto -->
+    <h1 class="div2title">Trazendo vida aos céus....</h1>
+    <h2 class="div2text">
+      Pense em quase qualquer forma e nós criaremos para você! <br>
+      <br>
+      Um balão special shape vai destacar realmente seu produto, mascote ou logotipo, e ao mesmo tempo, voará como uma aeronave completamente funcional. <br>
+      <br>
+      Para garantir a forma perfeita de um balão em formato especial, há uma rede complexa de cordas e estruturas dentro do balão, invisível para quem está fora. <br>
+      <br>
+      Eduardo Libra, nosso designer-chefe de balões, já construiu dezenas de balões em forma especial, ele certezamente vai transformar sua ideia em balão de ar quente!<br>
+      <br>
+    </h2>
+    <!-- Imagem do designer -->
+    <img class="eduimg" src="edu_libra.jpg" alt="">
+    <!-- Nome do designer -->
+    <h1 class="edu">Eduardo Libra, nosso Designer</h1>
+  </div>
+
+
+<!-- Título da Galeria -->
+<h1>Special Shapes</h1>
+
+<!-- Galeria de Balões -->
+<div id="Galeriabalao" class="Galeriabalao">
+
+  <!-- Card 1 -->
+  <div class="card">
+      <img src="gallery/cuckoo.png" alt="Imagem 1">
+      <div class="overlay">
+          <h3>Cuckoo</h3>
+          <p>um lindo rélogio</p>
+          <button>Fazer Orçamento</button>
+      </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+      <img src="gallery/sp_baby.png" alt="Imagem 2">
+      <div class="overlay">
+          <h3>Baby Car</h3>
+          <p>A Bebe Sófia</p>
+          <button>Fazer Orçamento</button>
+      </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+      <img src="gallery/sp_pencil.png" alt="Imagem 3">
+      <div class="overlay">
+          <h3>Pencil Boy</h3>
+          <p>Toquinho de Lápis</p>
+          <button>Fazer Orçamento</button>
+      </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="card">
+      <img src="gallery/sp_copter.png" alt="Imagem 4">
+      <div class="overlay">
+          <h3>Copter Boy</h3>
+          <p>Helicoptero</p>
+          <button>Fazer Orçamento</button>
+      </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card">
+      <img src="gallery/sp_bill.png" alt="Imagem 5">
+      <div class="overlay">
+          <h3>Bill</h3>
+          <p>O Vampiro</p>
+          <button>Fazer Orçamento</button>
+      </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="card">
+      <img src="gallery/frank.png" alt="Imagem 6">
+      <div class="overlay">
+          <h3>Elço the Frank</h3>
+          <p>Frankstein!!</p>
+          <button>Fazer Orçamento</button>
+      </div>
+  </div>
+
+</div>
+
+
+<!-- Formulário de Contato -->
+  <div id="formSection" class="formcontainer">
+    <h1 class="enc2">Encomende já um Special Shape!</h1>
+    <form action="action_page.php">
+      <div class="row">
+          <div class="col-25">
+              <label for="fname">Nome</label>
+          </div>
+          <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-25">
+              <label for="lname">Sobrenome</label>
+          </div>
+          <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome..">
+          </div>
+      </div>
+  
+      <div class="row">
+          <div class="col-25">
+              <label for="tipo">Serviço:</label>
+          </div>
+          <div class="col-75">
+              <select id="tipo" name="tipo">
+                  <option value="faixa">Faixa</option>
+                  <option value="inflavel">Inflável</option>
+                  <option value="eventoBalao">Evento com Balão</option>
+                  <option value="outros">Outros</option>
+              </select>
+          </div>
+      </div>
+  
+      <div class="row">
+          <div class="col-25">
+              <label for="subject">Mensagem</label>
+          </div>
+          <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Sua mensagem" style="height:200px"></textarea>
+          </div>
+      </div>
+      <div class="row">
+          <input class="submitbutton1" type="submit" value="Enviar">
+      </div>
+    </form>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    Desenvolvido orgulhosamente por José E. ❤️
+  </footer>
+
+  <!-- Popup de Cookies -->
+  <div id="cookie-popup" class="cookie-popup">
+    <p>Este site utiliza cookies para melhorar a sua experiência. Ao continuar navegando, você concorda com o uso de cookies.</p>
+    <button id="accept-cookies">Aceitar</button>
+  </div>
+
+  <!-- Scripts JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
